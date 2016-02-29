@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+android:background="#fff"
+>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:background="@drawable/kos1"
+>
+
+
+<ImageView
+android:id="@+id/novisken"
+android:background="@drawable/novisken1"
+android:paddingLeft="5dp"
+android:paddingTop="5dp"
+android:layout_marginLeft="5dp"
+android:layout_marginTop="3dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="left"
+/>
+
+<View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />    
+
+<ImageView
+android:id="@+id/naplata"
+android:background="@drawable/naplata1"
+android:paddingTop="5dp"
+android:paddingRight="5dp"
+android:layout_marginRight="5dp"
+android:layout_marginTop="3dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="right"
+/>
+
+
+</LinearLayout>
+
+<ListView
+android:id="@android:id/list"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:drawSelectorOnTop="false"
+android:cacheColorHint="#00000000"
+/>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:background="@drawable/total">
+
+<!--<ImageView-->
+<!--android:id="@+id/logo"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:src="@drawable/cijena"-->
+<!--/>-->
+
+<TextView
+android:id="@+id/uk"
+android:paddingTop="15dp"
+android:paddingRight="15dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Ukupno:"
+android:textSize="10dp"
+android:textStyle="italic"
+android:textColor="#000"
+android:layout_gravity="right"
+/> 
+
+<TextView
+android:id="@+id/ukpop"
+android:paddingTop="5dp"
+android:paddingRight="15dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Ukupan popust:"
+android:textSize="10dp"
+android:textStyle="italic"
+android:textColor="#000"
+android:layout_gravity="right"
+/> 
+
+<TextView
+android:id="@+id/ukplat"
+android:paddingTop="5dp"
+android:paddingRight="15dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Ukupno za platit:"
+android:textSize="10dp"
+android:textStyle="italic"
+android:textColor="#000"
+android:layout_gravity="right"
+/> 
+
+</LinearLayout>
+
+<TextView
+        android:id="@+id/empty_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+</LinearLayout>
